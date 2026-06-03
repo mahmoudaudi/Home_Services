@@ -31,9 +31,9 @@ export default function HeroSection() {
   return (
     <section className="bg-[#142257] text-white relative overflow-hidden flex flex-col min-h-[610px] md:min-h-screen md:pb-14 xl:mb-0 mb-[-2px]">
 
-      {/* Left image — absolute, fully independent from center content */}
+      {/* Left image — hidden on mobile/tablet, scales with screen on desktop */}
       <div
-        className="hidden xl:block absolute left-0 xl:w-[22%] 2xl:w-[24%] z-10"
+        className="hidden lg:block absolute left-0 lg:w-[18%] xl:w-[22%] 2xl:w-[24%] z-10"
         style={{ top: IMAGE_TOP }}
       >
         <img
@@ -43,9 +43,9 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* Right image — absolute, fully independent from center content */}
+      {/* Right image — hidden on mobile/tablet, scales with screen on desktop */}
       <div
-        className="hidden xl:block absolute right-0 xl:w-[22%] 2xl:w-[24%] z-10"
+        className="hidden lg:block absolute right-0 lg:w-[18%] xl:w-[22%] 2xl:w-[24%] z-10"
         style={{ top: IMAGE_TOP }}
       >
         <img
@@ -89,7 +89,7 @@ export default function HeroSection() {
             ))}
           </div>
 
-          <a href={CONTACT_PHONE_HREF} className="group mt-8 bg-[#15B2F5] text-white font-bold px-4 sm:px-6 py-2 sm:py-2.5 rounded-full
+          <a href={CONTACT_PHONE_HREF} className="group mt-8 bg-[#15B2F5] text-white font-bold px-4 sm:px-6 py-2.5 sm:py-2.5 rounded-full
                              inline-flex items-center justify-center gap-2
                              hover:bg-[#139ed9] hover:-translate-y-0.5
                              transition-all duration-300 select-none

@@ -29,6 +29,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Desktop-only divider below hero */
 .hero-divider {
   height: 0;
@@ -38,6 +42,15 @@ html {
   .hero-divider {
     height: 1px;
   }
+}
+
+/* Testimonials carousel fade-in */
+@keyframes testimonial-fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+.testimonial-fade {
+  animation: testimonial-fade 0.35s ease-out;
 }
 
 /* Offset anchor-linked sections below the fixed navbar (≈48 px) */
@@ -73,7 +86,7 @@ section[id] {
   right: 0;
   height: 54px;
   background-color: #ffffff;
-  clip-path: polygon(0 0, 100% 0, 100% 16px, 42% 16px, 39% 54px, 13% 54px, 10% 16px, 0 16px);
+  clip-path: polygon(0 0, 100% 0, 100% 1px, 42% 1px, 39% 54px, 13% 54px, 10% 1px, 0 1px);
   z-index: 40;
   pointer-events: none;
 }
@@ -81,6 +94,6 @@ section[id] {
 @media (max-width: 767px) {
   .cta-banner-notch::before {
     height: 48px;
-    clip-path: polygon(0 0, 100% 0, 100% 12px, 78% 12px, 73% 48px, 27% 48px, 22% 12px, 0 12px);
+    clip-path: polygon(0 0, 100% 0, 100% 1px, 78% 1px, 73% 48px, 27% 48px, 22% 1px, 0 1px);
   }
 }

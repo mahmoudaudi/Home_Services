@@ -6,7 +6,7 @@ export default function FaqSection() {
   const toggle = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
-    <section className="bg-white py-16 px-5 sm:px-8 md:py-20 md:px-12 lg:py-24 lg:px-16 xl:px-24 select-none w-full">
+    <section className="bg-white py-16 px-5 sm:px-8 md:py-20 md:px-12 lg:py-24 lg:px-16 xl:px-24 select-none w-full relative z-[2] mb-[-4px]">
       <div className="max-w-[1240px] w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 lg:gap-16 items-start">
 
         {/* Sticky heading */}

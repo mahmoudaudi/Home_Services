@@ -10,4 +10,4 @@ export const COLORS = {
 export const CONTACT_PHONE_DISPLAY = "(888) 617-5894";
 export const CONTACT_PHONE_HREF = "tel:8886175894";
 export const BUSINESS_NAME = "HomePro";
-export const COPYRIGHT_YEAR = new Date().getFullYear().toString();
+export const COPYRIGHT_YEAR = "2023";

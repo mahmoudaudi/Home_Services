@@ -9,7 +9,7 @@ export default function BlogSection() {
       <div className="max-w-[1240px] w-full mx-auto flex flex-col items-center">
 
         <div className="text-center max-w-[650px] mb-10 md:mb-14 lg:mb-16">
-          <h2 className="text-[26px] sm:text-[30px] lg:text-[44px] text-[#1E293B] font-bold tracking-tight mb-3 md:mb-4">
+          <h2 className="text-[26px] sm:text-[30px] md:text-[36px] lg:text-[44px] text-[#1E293B] font-bold tracking-tight mb-3 md:mb-4">
             Explore Insights in Our Blog
           </h2>
           <p className="text-slate-500 text-sm md:text-[15px] leading-relaxed max-w-[530px] mx-auto">

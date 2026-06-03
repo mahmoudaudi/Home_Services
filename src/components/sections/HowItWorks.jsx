@@ -31,7 +31,7 @@ export default function HowItWorks() {
             height: auto !important;
             position: absolute !important;
             bottom: 0 !important;
-            left: -8% !important;
+            left: -3% !important;
           }
         }
       `}</style>

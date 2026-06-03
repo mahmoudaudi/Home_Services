@@ -101,7 +101,7 @@ export default function Footer() {
 
         </div>
 
-        <div className="w-full h-px bg-white/20 mb-5 sm:mb-6" />
+        <div className="hidden md:block w-full h-px bg-white/20 mb-5 sm:mb-6" />
         <div className="text-center text-white/80 text-[12.5px] sm:text-[13.5px] tracking-wide">
           © {COPYRIGHT_YEAR} HomePro. All rights reserved.
         </div>
