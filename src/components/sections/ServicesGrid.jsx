@@ -4,7 +4,7 @@ import { CONTACT_PHONE_HREF } from "@/constants/theme";
 export default function ServicesGrid() {
   return (
     /* Removed min-h-screen — section height should be driven by content */
-    <section className="bg-white py-16 px-5 sm:px-8 md:px-12 lg:py-20 lg:px-16 xl:px-20 select-none">
+    <section id="services" className="bg-white py-16 px-5 sm:px-8 md:px-12 lg:py-20 lg:px-16 xl:px-20 select-none">
       <div className="w-full max-w-7xl mx-auto">
 
         <div className="text-center max-w-2xl mx-auto mb-12 lg:mb-14">

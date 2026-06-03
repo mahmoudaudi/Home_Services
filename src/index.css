@@ -1,4 +1,33 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --background: #fff;
+  --foreground: #000;
+
+  --primary: #142257;
+  --primary-accent: #1f3584;
+  --primary-foreground: #fff;
+  --primary-muted: #9ea3b5;
+
+  --secondary: #15b2f5;
+  --secondary-foreground: #fff;
+
+  --surface: #f3f5f9;
+  --surface-foreground: #545971;
+
+  --muted: #545971;
+
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+  font-family: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 /* ─── SVG Clip-path utilities ──────────────────────────────────────────────
    Tailwind arbitrary-value syntax cannot reference SVG fragment IDs reliably,

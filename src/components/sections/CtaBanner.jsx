@@ -6,7 +6,7 @@ import { CONTACT_PHONE_HREF } from "@/constants/theme";
 export default function CtaBanner() {
   return (
     /* .cta-banner-notch adds the ::before white geometric bar (index.css) */
-    <section className="cta-banner-notch bg-[#0A194E] min-h-[460px] sm:min-h-[480px] w-full relative overflow-hidden flex items-center select-none pt-20 sm:pt-[72px] md:pt-16 pb-0 px-5 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+    <section id="contact" className="cta-banner-notch bg-[#0A194E] min-h-[460px] sm:min-h-[480px] w-full relative overflow-hidden flex items-center select-none pt-20 sm:pt-[72px] md:pt-16 pb-0 px-5 sm:px-8 md:px-12 lg:px-16 xl:px-20">
 
       <div className="max-w-[1280px] w-full mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center relative z-10">
 

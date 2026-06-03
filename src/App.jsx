@@ -27,7 +27,7 @@ function SvgDefs() {
       <defs>
         {/* House-shaped polygon — used by ProfessionalServices */}
         <clipPath id="housePoly" clipPathUnits="objectBoundingBox">
-          <path d="M 0.50,0.00 L 1.00,0.24 L 1.00,0.94 Q 1.00,1.00 0.94,1.00 L 0.06,1.00 Q 0.00,1.00 0.00,0.94 L 0.00,0.24 Z" />
+          <path d="M 0.493,0.008 Q 0.50,0.00 0.507,0.008 L 0.96,0.25 Q 1.00,0.28 1.00,0.33 L 1.00,0.93 Q 1.00,1.00 0.93,1.00 L 0.07,1.00 Q 0.00,1.00 0.00,0.93 L 0.00,0.33 Q 0.00,0.28 0.04,0.25 Z" />
         </clipPath>
 
         {/* Side-chamfer shape — used by BenefitsSection on desktop */}
@@ -57,6 +57,7 @@ export default function App() {
       <Navbar />
       <main>
         <HeroSection />
+        <div className="w-[92%] mx-auto h-px bg-gray-200" />
         <ProfessionalServices />
         <ServicesGrid />
         <BenefitsSection />

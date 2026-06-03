@@ -5,7 +5,7 @@ import { CONTACT_PHONE_DISPLAY, CONTACT_PHONE_HREF } from "@/constants/theme";
 
 export default function ProfessionalServices() {
   return (
-    <section className="bg-white py-14 px-5 sm:px-8 md:px-12 lg:py-20 lg:px-16 xl:px-24 select-none">
+    <section id="about" className="bg-white py-14 px-5 sm:px-8 md:px-12 lg:py-20 lg:px-16 xl:px-24 select-none">
 
       <div className="max-w-[1280px] mx-auto flex flex-col-reverse gap-10 md:gap-14 lg:grid lg:grid-cols-[5fr_7fr] lg:gap-16 items-center">
 

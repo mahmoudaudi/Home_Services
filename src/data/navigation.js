@@ -4,3 +4,4 @@ export const NAV_LINKS = [
   { label: "Our Blog", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ];
+

@@ -5,7 +5,7 @@ const TAG_PILL =
 
 export default function BlogSection() {
   return (
-    <section className="bg-white py-16 px-5 sm:px-8 md:px-12 lg:py-24 lg:px-16 xl:px-20 select-none w-full">
+    <section id="blog" className="bg-white py-16 px-5 sm:px-8 md:px-12 lg:py-24 lg:px-16 xl:px-20 select-none w-full">
       <div className="max-w-[1240px] w-full mx-auto flex flex-col items-center">
 
         <div className="text-center max-w-[650px] mb-10 md:mb-14 lg:mb-16">

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "@/assets/Example Logo.png";
+import logoIcon from "@/assets/icons/Group 33.svg";
 import { NAV_LINKS } from "@/data/navigation";
 
 export default function Navbar() {
@@ -8,9 +8,12 @@ export default function Navbar() {
   return (
     <>
       <header className="fixed top-0 left-0 w-full bg-[#142257] z-50">
-        <div className="max-w-[1440px] mx-auto flex items-center justify-between px-5 sm:px-8 lg:px-16 xl:px-24 py-5 md:py-5">
+        <div className="max-w-[1440px] mx-auto flex items-center justify-between px-5 sm:px-8 lg:px-16 xl:px-24 py-3 md:py-3">
 
-          <img src={logo} alt="HomePro" className="h-8 md:h-9 object-contain" />
+          <div className="flex items-center gap-2">
+            <img src={logoIcon} alt="" aria-hidden="true" className="h-4 md:h-5 object-contain" />
+            <span className="text-white font-bold text-[16px] md:text-[18px] tracking-tight">HomePro</span>
+          </div>
 
           <nav className="hidden lg:flex gap-8 xl:gap-10 text-[15px] xl:text-[16px] font-bold text-white">
             {NAV_LINKS.map(({ label, href }) => (
@@ -55,7 +58,10 @@ export default function Navbar() {
         aria-label="Mobile navigation"
       >
         <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
-          <img src={logo} alt="HomePro" className="h-8 object-contain" />
+          <div className="flex items-center gap-2">
+            <img src={logoIcon} alt="" aria-hidden="true" className="h-6 object-contain" />
+            <span className="text-white font-bold text-[16px] tracking-tight">HomePro</span>
+          </div>
           {/* Close — 44 × 44 tap target */}
           <button
             onClick={() => setMenuOpen(false)}
