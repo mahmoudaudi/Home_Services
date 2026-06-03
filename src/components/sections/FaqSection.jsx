@@ -10,7 +10,7 @@ export default function FaqSection() {
       <div className="max-w-[1240px] w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 lg:gap-16 items-start">
 
         {/* Sticky heading */}
-        <div className="lg:col-span-5 lg:sticky lg:top-10 text-center lg:text-left">
+        <div className="lg:col-span-5 text-center lg:text-left">
           <h2 className="text-[26px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-bold text-[#0F172A] leading-tight tracking-tight mb-4 md:mb-5">
             Frequently Asked Questions
           </h2>

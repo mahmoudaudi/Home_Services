@@ -18,7 +18,7 @@ export default function CheckItem({ children, color = "#2196F3", textColor = "#1
           strokeLinejoin="round"
         />
       </svg>
-      <span style={{ fontSize: "15px", fontWeight: 700, color: textColor }}>
+      <span style={{ fontSize: "14px", fontWeight: 700, color: textColor, fontFamily: "var(--font-sans)" }}>
         {children}
       </span>
     </div>
