@@ -6,7 +6,7 @@ import guaranteeIcon from "@/assets/icons/Guarantee.png";
 import clockIcon from "@/assets/icons/Clock.png";
 import mapIcon from "@/assets/icons/Map.png";
 import calendarIcon from "@/assets/icons/Calendar.png";
-import { CONTACT_PHONE_HREF } from "@/constants/theme";
+import { CONTACT_PHONE_HREF } from "@/config/theme";
 
 const HERO_FEATURES = [
   { icon: guaranteeIcon, alt: "Satisfaction Guarantee", label: "Satisfaction\nGuarantee" },

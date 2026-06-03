@@ -1,5 +1,5 @@
 import logo from "@/assets/Example Logo1.png";
-import { CONTACT_PHONE_HREF, COPYRIGHT_YEAR } from "@/constants/theme";
+import { CONTACT_PHONE_HREF, COPYRIGHT_YEAR } from "@/config/theme";
 
 export default function Footer() {
   return (

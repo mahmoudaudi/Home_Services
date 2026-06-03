@@ -1,5 +1,5 @@
 import { SERVICES } from "@/data/services";
-import { CONTACT_PHONE_HREF } from "@/constants/theme";
+import { CONTACT_PHONE_HREF } from "@/config/theme";
 
 export default function ServicesGrid() {
   return (
