@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="max-w-[1440px] mx-auto flex items-center justify-between px-5 sm:px-8 lg:px-16 xl:px-24 py-3 md:py-3">
 
           <div className="flex items-center gap-2">
-            <img src={logoIcon} alt="" aria-hidden="true" className="h-4 md:h-5 object-contain" />
+            <img src={logoIcon} alt="" aria-hidden="true" className="h-6 md:h-5 object-contain" />
             <span className="text-white font-bold text-[16px] md:text-[18px] tracking-tight">HomePro</span>
           </div>
 

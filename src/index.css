@@ -29,6 +29,22 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Desktop-only divider below hero */
+.hero-divider {
+  height: 0;
+  overflow: hidden;
+}
+@media (min-width: 1280px) {
+  .hero-divider {
+    height: 1px;
+  }
+}
+
+/* Offset anchor-linked sections below the fixed navbar (≈48 px) */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
 /* ─── SVG Clip-path utilities ──────────────────────────────────────────────
    Tailwind arbitrary-value syntax cannot reference SVG fragment IDs reliably,
    so these are defined here as named utilities.                              */

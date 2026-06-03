@@ -57,7 +57,7 @@ export default function App() {
       <Navbar />
       <main>
         <HeroSection />
-        <div className="w-[92%] mx-auto h-px bg-gray-200" />
+        <div className="hero-divider w-[92%] mx-auto bg-gray-200" />
         <ProfessionalServices />
         <ServicesGrid />
         <BenefitsSection />

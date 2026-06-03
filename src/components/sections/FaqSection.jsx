@@ -41,7 +41,7 @@ export default function FaqSection() {
                 <button
                   onClick={() => toggle(index)}
                   aria-expanded={isOpen}
-                  className="w-full flex items-center justify-between text-left gap-3 focus:outline-none group"
+                  className="w-full flex items-center justify-between text-left gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-200/40 rounded-sm group"
                 >
                   <span className="text-[15px] sm:text-base md:text-[17px] font-bold text-[#1E293B] tracking-tight group-hover:text-[#00A3E0] transition-colors duration-200">
                     {faq.question}

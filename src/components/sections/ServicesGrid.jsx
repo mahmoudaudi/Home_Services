@@ -18,7 +18,7 @@ export default function ServicesGrid() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-12 items-start">
 
           {SERVICES.map((service) => (
-            <div key={service.title} className="flex flex-col items-start text-left w-full">
+            <div key={service.title} className="flex flex-col items-center text-center sm:items-start sm:text-left w-full">
               <div className="w-[56px] h-[56px] bg-[#142257] rounded-[14px] flex items-center justify-center mb-4 shadow-sm shrink-0">
                 <img
                   src={service.icon}

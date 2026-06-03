@@ -12,7 +12,7 @@ export default function BlogSection() {
           <h2 className="text-[26px] sm:text-[30px] lg:text-[44px] text-[#1E293B] font-bold tracking-tight mb-3 md:mb-4">
             Explore Insights in Our Blog
           </h2>
-          <p className="text-slate-500 text-sm md:text-[15px] md:text-base leading-relaxed max-w-[530px] mx-auto">
+          <p className="text-slate-500 text-sm md:text-[15px] leading-relaxed max-w-[530px] mx-auto">
             Find lots of insights and information on our blog. Explore, learn, and get inspired today.
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function BlogSection() {
                       {tag}
                     </span>
                   ))}
-                  <span className={`${TAG_PILL} lg:hidden`}>…</span>
+                  {post.tags.length > 2 && <span className={`${TAG_PILL} lg:hidden`}>…</span>}
                 </div>
               </div>
 
@@ -56,7 +56,7 @@ export default function BlogSection() {
           ))}
         </div>
 
-        <button className="flex items-center gap-1.5 text-[#00A3E0] hover:text-[#0089BE] font-bold text-lg sm:text-xl tracking-tight transition-colors duration-200 group py-2 px-4 rounded-lg focus:outline-none">
+        <button className="flex items-center gap-1.5 text-[#00A3E0] hover:text-[#0089BE] font-bold text-lg sm:text-xl tracking-tight transition-colors duration-200 group py-2 px-4 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/50">
           <span>View More</span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />

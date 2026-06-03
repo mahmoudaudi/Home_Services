@@ -1,5 +1,5 @@
 import logo from "@/assets/Example Logo1.png";
-import { CONTACT_PHONE_HREF } from "@/constants/theme";
+import { CONTACT_PHONE_HREF, COPYRIGHT_YEAR } from "@/constants/theme";
 
 export default function Footer() {
   return (
@@ -103,7 +103,7 @@ export default function Footer() {
 
         <div className="w-full h-px bg-white/20 mb-5 sm:mb-6" />
         <div className="text-center text-white/80 text-[12.5px] sm:text-[13.5px] tracking-wide">
-          © 2023 HomePro. All rights reserved.
+          © {COPYRIGHT_YEAR} HomePro. All rights reserved.
         </div>
 
       </div>

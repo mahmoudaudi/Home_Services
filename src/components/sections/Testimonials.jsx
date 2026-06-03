@@ -73,7 +73,7 @@ export default function Testimonials() {
         {/* Desktop carousel row — nav buttons hidden on mobile */}
         <div className="relative w-full flex items-center justify-between gap-4 md:gap-8 min-h-[140px] mb-6">
           <NavButton direction="prev" onClick={handlePrev} className="hidden lg:flex shrink-0 w-11 h-11 [&>svg]:w-4 [&>svg]:h-4" />
-          <div className="max-w-[680px] mx-auto px-2">
+          <div className="max-w-[680px] mx-auto px-2" aria-live="polite" aria-atomic="true">
             <p className="text-slate-500/90 text-[14.5px] md:text-[15.5px] leading-[24px] md:leading-[26px] font-normal text-center">
               {active.text}
             </p>
