@@ -1,6 +1,8 @@
-# Home Services — Landing Page
+# HomePro — Landing Page
 
 A modern, fully responsive landing page for a home services platform, built with React 19, Vite, and Tailwind CSS v4.
+
+🌐 **Live Demo**: [home-services-pi-kohl.vercel.app](https://home-services-pi-kohl.vercel.app/)
 
 ## Tech Stack
 
