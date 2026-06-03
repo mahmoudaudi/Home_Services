@@ -1,16 +1,85 @@
-# React + Vite
+# Home Services — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive landing page for a home services platform, built with React 19, Vite, and Tailwind CSS v4.
 
-Currently, two official plugins are available:
+## Design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Figma design file: [Home Services UI Kit](https://www.figma.com/community/file/1257965372422620398)
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Tool | Version |
+|------|---------|
+| React | 19 |
+| Vite | 8 |
+| Tailwind CSS | 4 |
+| ESLint | 10 |
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── assets/          # Images and icons
+├── components/
+│   ├── layout/      # Navbar, Footer
+│   ├── sections/    # Page sections (Hero, Services, Blog, FAQ, ...)
+│   └── ui/          # Reusable UI primitives
+├── constants/       # Theme tokens
+└── data/            # Static data (services, testimonials, blog posts, ...)
+```
+
+## Sections
+
+- **Hero** — Main banner with CTA
+- **Services Grid** — Browsable service categories
+- **Benefits** — Why choose us highlights
+- **How It Works** — Step-by-step process
+- **Professional Services** — Featured professionals
+- **Testimonials** — Customer reviews
+- **Blog** — Latest articles
+- **FAQ** — Frequently asked questions
+- **CTA Banner** — Call-to-action strip
+- **Footer** — Links, social media, contact info
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <repo-url>
+cd home-services
+
+# Install dependencies
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Production Build
+
+```bash
+npm run build
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## License
+
+This project is for educational and portfolio purposes.
