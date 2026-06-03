@@ -1,6 +1,5 @@
-import personImg from "@/assets/person.png";
-import homeImg from "@/assets/Home.png";
-import logoHouseIcon from "@/assets/LogoHouse.png";
+import contactImg from "@/assets/contact-image.png";
+import bannerImg from "@/assets/banner-image.png";
 import { CONTACT_PHONE_HREF } from "@/constants/theme";
 
 export default function CtaBanner() {
@@ -41,37 +40,22 @@ export default function CtaBanner() {
           </a>
         </div>
 
-        {/* Right: composite image */}
-        <div className="md:col-span-6 relative w-full h-[280px] sm:h-[340px] md:h-[400px] lg:h-[440px] flex justify-center md:justify-end items-end overflow-visible mt-4 md:mt-0">
-          <div className="relative h-full w-full max-w-[300px] sm:max-w-[380px] md:max-w-[460px] flex items-end justify-center md:justify-end">
+        {/* Right: mobile — simple image only */}
+        <div className="md:hidden flex justify-center items-end mt-4 -mx-5 sm:-mx-8">
+          <img
+            src={contactImg}
+            alt="HomePro professional"
+            className="w-full object-contain select-none pointer-events-none"
+          />
+        </div>
 
-            <img
-              src={personImg}
-              alt="Worker with mobile device"
-              className="h-[95%] w-auto object-contain relative z-10 select-none pointer-events-none"
-            />
-
-            {/* Double-exposure house overlay */}
-            <div className="absolute right-[-100px] sm:right-[-120px] md:right-[-100px] lg:right-[-140px] bottom-0 top-0 pt-8 w-full md:w-[115%] lg:w-[119%] h-[50%] md:h-full z-20 mix-blend-screen pointer-events-none overflow-hidden">
-              <img
-                src={homeImg}
-                alt=""
-                aria-hidden="true"
-                className="w-full h-full object-contain object-right brightness-[0.85] contrast-[175%] saturate-[110%] scale-[1.05] origin-bottom-right"
-              />
-            </div>
-
-            {/* Phone mockup */}
-            <div className="absolute left-[24%] sm:left-[38%] md:left-[24%] lg:left-[8%] top-[60%] -translate-y-1/2 w-[48px] h-[88px] sm:w-[56px] sm:h-[104px] bg-black p-[2.5px] rounded-[12px] z-[25] flex overflow-hidden shadow-2xl">
-              <div className="w-full h-full bg-white rounded-[10px]" />
-            </div>
-
-            {/* App badge */}
-            <div className="absolute left-[5%] sm:left-[18%] md:left-[4%] lg:left-[-2%] top-[60%] -translate-y-1/2 w-[52px] h-[52px] sm:w-[68px] sm:h-[68px] md:w-[72px] md:h-[72px] z-30 bg-[#00A3E0] rounded-[16px] sm:rounded-[18px] flex items-center justify-center shadow-xl shadow-[#00A3E0]/40 border border-white/20 p-2 sm:p-[10px]">
-              <img src={logoHouseIcon} alt="HomePro app icon" className="w-full h-full object-contain" />
-            </div>
-
-          </div>
+        {/* Right: desktop — single banner image */}
+        <div className="hidden md:flex md:col-span-6 justify-end items-end -mb-4 -mr-12 lg:-mr-16 xl:-mr-20">
+          <img
+            src={bannerImg}
+            alt="HomePro professional"
+            className="w-full max-w-[600px] lg:max-w-[680px] object-contain select-none pointer-events-none"
+          />
         </div>
 
       </div>

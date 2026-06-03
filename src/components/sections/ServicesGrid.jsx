@@ -7,7 +7,7 @@ export default function ServicesGrid() {
       <div className="w-full max-w-6xl mx-auto">
 
         <div className="text-center max-w-2xl mx-auto mb-14 lg:mb-16">
-          <h2 className="text-[26px] sm:text-[30px] lg:text-[40px] font-bold tracking-tight text-[#1C2036] leading-tight">
+          <h2 className="text-[26px] sm:text-[30px] md:text-[34px] lg:text-[40px] font-bold tracking-tight text-[#1C2036] leading-tight">
             Our Services
           </h2>
           <p className="mt-3 text-slate-500 text-sm leading-relaxed">
@@ -15,7 +15,7 @@ export default function ServicesGrid() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-12 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-12 items-start">
 
           {SERVICES.map((service) => (
             <div key={service.title} className="flex flex-col items-center text-center sm:items-start sm:text-left w-full">

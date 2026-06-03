@@ -57,7 +57,7 @@ export default function HowItWorks() {
         {/* Content */}
         <div className="xl:col-span-7 flex flex-col text-center items-center lg:text-left lg:items-start xl:pl-6 w-full max-w-[660px] mx-auto xl:mx-0">
 
-          <h2 className="text-[28px] sm:text-[32px] lg:text-[42px] font-bold text-[#0F172A] leading-tight tracking-tight mb-8 md:mb-10 xl:mb-12">
+          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-bold text-[#0F172A] leading-tight tracking-tight mb-8 md:mb-10 xl:mb-12">
             How HomePro works?
           </h2>
 
