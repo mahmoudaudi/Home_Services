@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full bg-[#142257] z-50">
+      <header className="fixed top-0 left-0 w-full bg-primary z-50">
         <div className="max-w-[1440px] mx-auto flex items-center justify-between px-5 sm:px-8 lg:px-16 xl:px-24 py-3 md:py-3">
 
           <div className="flex items-center gap-2">
@@ -17,7 +17,7 @@ export default function Navbar() {
 
           <nav className="hidden lg:flex gap-8 xl:gap-10 text-[15px] xl:text-[16px] font-bold text-white">
             {NAV_LINKS.map(({ label, href }) => (
-              <a key={label} href={href} className="hover:text-[#15B2F5] transition-colors">
+              <a key={label} href={href} className="hover:text-secondary transition-colors">
                 {label}
               </a>
             ))}
@@ -52,7 +52,7 @@ export default function Navbar() {
 
       {/* Slide-in drawer */}
       <aside
-        className={`fixed top-0 right-0 h-full w-[280px] bg-[#142257] z-[70] transition-transform duration-300 flex flex-col ${
+        className={`fixed top-0 right-0 h-full w-[280px] bg-primary z-[70] transition-transform duration-300 flex flex-col ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
         aria-label="Mobile navigation"
@@ -78,7 +78,7 @@ export default function Navbar() {
               key={label}
               href={href}
               onClick={() => setMenuOpen(false)}
-              className="py-2 hover:text-[#15B2F5] transition-colors"
+              className="py-2 hover:text-secondary transition-colors"
             >
               {label}
             </a>

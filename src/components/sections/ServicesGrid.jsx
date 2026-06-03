@@ -19,7 +19,7 @@ export default function ServicesGrid() {
 
           {SERVICES.map((service) => (
             <div key={service.title} className="flex flex-col items-center text-center sm:items-start sm:text-left w-full">
-              <div className="w-[56px] h-[56px] bg-[#142257] rounded-[14px] flex items-center justify-center mb-4 shadow-sm shrink-0">
+              <div className="w-[56px] h-[56px] bg-primary rounded-[14px] flex items-center justify-center mb-4 shadow-sm shrink-0">
                 <img
                   src={service.icon}
                   alt=""
@@ -37,7 +37,7 @@ export default function ServicesGrid() {
           ))}
 
           {/* CTA card */}
-          <div className="bg-[#15B2F5] rounded-[24px] p-7 flex flex-col items-center justify-center text-center w-full min-h-[220px]">
+          <div className="bg-secondary rounded-[24px] p-7 flex flex-col items-center justify-center text-center w-full min-h-[220px]">
             <h3 className="text-white text-[19px] font-bold tracking-tight mb-2">
               More service?
             </h3>
@@ -46,7 +46,7 @@ export default function ServicesGrid() {
             </p>
             <a
               href={CONTACT_PHONE_HREF}
-              className="bg-white text-[#15B2F5] font-bold text-sm py-3 w-full max-w-[200px] text-center rounded-full hover:bg-slate-50 transition-colors shadow-sm inline-block"
+              className="bg-white text-secondary font-bold text-sm py-3 w-full max-w-[200px] text-center rounded-full hover:bg-slate-50 transition-colors shadow-sm inline-block"
             >
               Call Us Now
             </a>

@@ -1,7 +1,19 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+@theme {
+  --color-primary:    #142257;
+  --color-primary-accent: #1f3584;
+  --color-primary-muted:  #9ea3b5;
+  --color-secondary:  #15b2f5;
+  --color-surface:    #f3f5f9;
+  --color-surface-fg: #545971;
+  --color-muted:      #545971;
+}
+
 :root {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+
   --background: #fff;
   --foreground: #000;
 
@@ -17,8 +29,6 @@
   --surface-foreground: #545971;
 
   --muted: #545971;
-
-  --font-sans: 'Plus Jakarta Sans', sans-serif;
 }
 
 * {
@@ -98,16 +108,3 @@ section[id] {
   }
 }
 
-/* Fluid typography — scales smoothly between 375px and 1440px */
-.text-fluid-hero {
-  font-size: clamp(1.75rem, 5vw + 0.5rem, 3.375rem);
-  line-height: 1.2;
-}
-.text-fluid-h2 {
-  font-size: clamp(1.5rem, 3vw + 0.5rem, 2.75rem);
-  line-height: 1.25;
-}
-.text-fluid-h3 {
-  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
-  line-height: 1.35;
-}

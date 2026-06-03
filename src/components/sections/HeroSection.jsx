@@ -23,7 +23,7 @@ const PHONE_FALLBACK =
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#142257] text-white relative overflow-hidden flex flex-col min-h-[610px] md:min-h-screen md:pb-14 xl:mb-0 mb-[-2px]">
+    <section className="bg-primary text-white relative overflow-hidden flex flex-col min-h-[610px] md:min-h-screen md:pb-14 xl:mb-0 mb-[-2px]">
 
       {/* Left image — absolute, independent from center content */}
       <div
@@ -78,12 +78,12 @@ export default function HeroSection() {
                     alt=""
                     aria-hidden="true"
                   />
-                  <span className="text-[#15B2F5] font-medium">{label}</span>
+                  <span className="text-secondary font-medium">{label}</span>
                 </div>
               ))}
             </div>
 
-            <a href={CONTACT_PHONE_HREF} className="group mt-8 bg-[#15B2F5] text-white font-bold px-4 sm:px-6 py-2.5 rounded-full
+            <a href={CONTACT_PHONE_HREF} className="group mt-8 bg-secondary text-white font-bold px-4 sm:px-6 py-2.5 rounded-full
                                inline-flex items-center justify-center gap-2
                                hover:bg-[#139ed9] hover:-translate-y-0.5
                                transition-all duration-300 select-none
@@ -113,7 +113,7 @@ export default function HeroSection() {
                 <div className="absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-white/18 to-transparent pointer-events-none" />
                 {HERO_FEATURES.slice(0, 2).map(({ icon, alt, label }) => (
                   <div key={alt} className="flex flex-col items-center text-center py-5 sm:py-6 px-2">
-                    <div className="w-10 h-10 rounded-full bg-[#31448C] flex items-center justify-center mb-3">
+                    <div className="w-10 h-10 rounded-full bg-primary-accent flex items-center justify-center mb-3">
                       <img src={icon} alt="" aria-hidden="true" className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                     <span className="text-white text-[11px] sm:text-[13px] font-medium leading-[1.4] whitespace-pre-line max-w-[110px]">
@@ -131,7 +131,7 @@ export default function HeroSection() {
                 <div className="absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-white/18 to-transparent pointer-events-none" />
                 {HERO_FEATURES.slice(2, 4).map(({ icon, alt, label }) => (
                   <div key={alt} className="flex flex-col items-center text-center py-5 sm:py-6 px-2">
-                    <div className="w-10 h-10 rounded-full bg-[#31448C] flex items-center justify-center mb-3">
+                    <div className="w-10 h-10 rounded-full bg-primary-accent flex items-center justify-center mb-3">
                       <img src={icon} alt="" aria-hidden="true" className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                     <span className="text-white text-[11px] sm:text-[13px] font-medium leading-[1.4] whitespace-pre-line max-w-[110px]">
@@ -148,7 +148,7 @@ export default function HeroSection() {
               {HERO_FEATURES.map(({ icon, alt, label }, index) => (
                 <div key={alt} className="contents">
                   <div className="flex items-center justify-center gap-2 text-left">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#2B438F]">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-accent">
                       <img src={icon} alt="" aria-hidden="true" className="h-[16px] w-[16px] object-contain" />
                     </div>
                     <span className="whitespace-pre-line text-[13px] font-normal leading-[1.15] tracking-[-0.02em] text-white">

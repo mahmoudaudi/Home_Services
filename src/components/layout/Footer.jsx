@@ -3,7 +3,7 @@ import { CONTACT_PHONE_HREF, COPYRIGHT_YEAR } from "@/constants/theme";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#15B2F5] text-white pt-12 sm:pt-14 lg:pt-16 pb-8 sm:pb-10 px-5 sm:px-8 md:px-12 lg:px-16 xl:px-20 w-full select-none">
+    <footer className="bg-secondary text-white pt-12 sm:pt-14 lg:pt-16 pb-8 sm:pb-10 px-5 sm:px-8 md:px-12 lg:px-16 xl:px-20 w-full select-none">
       <div className="max-w-[1140px] w-full mx-auto flex flex-col">
 
         {/* Newsletter card */}
@@ -26,7 +26,7 @@ export default function Footer() {
               className="flex-1 min-w-0 bg-transparent pl-4 sm:pl-5 pr-2 py-2.5 text-slate-700 outline-none text-[13px] sm:text-[14px] placeholder:text-slate-300"
               aria-label="Email address for newsletter"
             />
-            <button className="bg-[#15B2F5] hover:bg-[#119cd9] transition-colors duration-200 px-4 sm:px-6 md:px-7 py-2.5 sm:py-3 rounded-full text-white font-bold text-[13px] sm:text-[14px] tracking-tight focus:outline-none shrink-0 whitespace-nowrap">
+            <button className="bg-secondary hover:bg-[#119cd9] transition-colors duration-200 px-4 sm:px-6 md:px-7 py-2.5 sm:py-3 rounded-full text-white font-bold text-[13px] sm:text-[14px] tracking-tight focus:outline-none shrink-0 whitespace-nowrap">
               Subscribe
             </button>
           </div>

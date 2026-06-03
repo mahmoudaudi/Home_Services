@@ -27,7 +27,7 @@ export default function ProfessionalServices() {
             ))}
           </div>
 
-          <div className="mt-7 md:mt-9 bg-[#15B2F5] py-3.5 px-5 rounded-[14px] w-full md:w-fit">
+          <div className="mt-7 md:mt-9 bg-secondary py-3.5 px-5 rounded-[14px] w-full md:w-fit">
             <p className="text-white/90 text-sm leading-relaxed">
               We already 24 hours fast services to help you.
             </p>

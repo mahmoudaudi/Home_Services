@@ -5,7 +5,7 @@ export default function BenefitsSection() {
     /* Gradual padding ramp: 40px → 56px → 80px → 80px across breakpoints */
     <section className="bg-white py-10 px-4 sm:py-14 sm:px-6 md:py-20 md:px-10 lg:px-14 xl:px-[68px] select-none">
 
-      <div className="max-w-[1500px] w-full mx-auto bg-[#142257] text-white py-10 px-5 sm:py-14 sm:px-8 md:py-20 md:px-16 lg:py-24 lg:px-28 rounded-[24px] clip-chamfer">
+      <div className="max-w-[1500px] w-full mx-auto bg-primary text-white py-10 px-5 sm:py-14 sm:px-8 md:py-20 md:px-16 lg:py-24 lg:px-28 rounded-[24px] clip-chamfer">
 
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 md:grid md:grid-cols-12 md:gap-8 md:items-start md:text-left lg:gap-12 border-b border-white/10 pb-10 sm:pb-12 mb-10 sm:mb-12">
