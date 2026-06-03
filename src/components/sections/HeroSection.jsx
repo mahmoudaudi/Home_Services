@@ -24,11 +24,11 @@ const PHONE_FALLBACK =
    Adjust TOP_OFFSET to move both side images up or down independently.
    The center content is never affected — images are absolutely positioned.
    ──────────────────────────────────────────────────────────────────────── */
-const IMAGE_TOP = "76px";   // ← change this value only
+const IMAGE_TOP = "34px";   // ← change this value only
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#142257] text-white relative overflow-hidden flex flex-col min-h-screen">
+    <section className="bg-[#142257] text-white relative overflow-hidden flex flex-col min-h-[610px] md:min-h-screen">
 
       {/* Left image — absolute, fully independent from center content */}
       <div
@@ -55,21 +55,25 @@ export default function HeroSection() {
       </div>
 
       {/* Center content — in normal flow, never affected by image position */}
-      <div className="flex-1 flex flex-col justify-between items-center text-center
-                      px-5 pt-24 sm:pt-28 pb-6">
+      <div className="flex-1 flex flex-col items-center justify-between text-center
+                      px-5 pt-24 sm:pt-28 pb-0">
 
         {/* Headline + CTA */}
-        <div className="my-auto flex flex-col items-center w-full max-w-xl">
-          <p className="text-slate-400 text-[11px] sm:text-xs md:text-sm tracking-widest font-normal uppercase opacity-80">
+        <div className="flex flex-col items-center w-full max-w-xl pt-2 sm:pt-0 xl:my-auto">
+          <p className="text-slate-400 text-[10px] sm:text-xs md:text-sm tracking-[0.12em] font-medium uppercase opacity-80">
             Maintenances&nbsp;&nbsp;·&nbsp;&nbsp;Repairs&nbsp;&nbsp;·&nbsp;&nbsp;Improvements
           </p>
 
-          <h1 className="text-[26px] sm:text-[34px] md:text-[44px] lg:text-[48px] xl:text-[50px] 2xl:text-[54px]
-                         font-bold leading-tight tracking-tight mt-5 text-white">
-            Need improvement or repair your home? We can help!
+          <h1 className="text-[28px] sm:text-[34px] md:text-[44px] lg:text-[48px] xl:text-[50px] 2xl:text-[54px]
+                         font-bold leading-[1.22] tracking-tight mt-5 text-white max-w-[340px] sm:max-w-none">
+            Need improvement
+            <br />
+            or repair your home?
+            <br />
+            we can help!
           </h1>
 
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-6 text-sm">
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 sm:gap-6 mt-6 text-[12px] sm:text-sm">
             {["Free Quotes", "100% Commitment-Free"].map((label) => (
               <div key={label} className="flex items-center gap-2">
                 <img
@@ -79,16 +83,16 @@ export default function HeroSection() {
                   alt=""
                   aria-hidden="true"
                 />
-                <span className="text-slate-300 font-medium">{label}</span>
+                <span className="text-[#15B2F5] font-medium">{label}</span>
               </div>
             ))}
           </div>
 
-          <button className="group mt-8 bg-[#15B2F5] text-white font-bold px-7 sm:px-8 py-3 rounded-full
+          <button className="group mt-8 bg-[#15B2F5] text-white font-bold px-5 sm:px-8 py-2.5 sm:py-3 rounded-full
                              inline-flex items-center justify-center gap-2
                              hover:bg-[#139ed9] hover:-translate-y-0.5
                              transition-all duration-300 cursor-pointer select-none">
-            <span className="tracking-wide text-base sm:text-lg">Call Us Now</span>
+            <span className="tracking-wide text-[14px] sm:text-lg">Call Us Now</span>
             <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center shrink-0
                             transition-transform duration-300 group-hover:scale-105">
               <img
@@ -103,18 +107,18 @@ export default function HeroSection() {
         </div>
 
         {/* Feature strip */}
-        <div className="w-full mt-10 xl:mt-6 pb-2">
+        <div className="w-full mt-10 xl:mt-6 pb-0">
 
           {/* Mobile / tablet 2×2 grid */}
-          <div className="grid grid-cols-2 xl:hidden relative">
-            <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none -translate-y-1/2" />
-            <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gradient-to-b from-transparent via-white/20 to-transparent pointer-events-none -translate-x-1/2" />
+          <div className="grid grid-cols-2 xl:hidden relative max-w-[330px] mx-auto pb-8">
+            <div className="absolute top-1/2 left-4 right-4 h-px bg-gradient-to-r from-transparent via-white/18 to-transparent pointer-events-none -translate-y-1/2" />
+            <div className="absolute top-0 bottom-8 left-1/2 w-px bg-gradient-to-b from-transparent via-white/18 to-transparent pointer-events-none -translate-x-1/2" />
             {HERO_FEATURES.map(({ icon, alt, label }) => (
               <div key={alt} className="flex flex-col items-center text-center py-5 sm:py-6 px-2">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#1b2d6e] flex items-center justify-center mb-2 sm:mb-3">
+                <div className="w-10 h-10 sm:w-10 sm:h-10 rounded-full bg-[#31448C] flex items-center justify-center mb-3">
                   <img src={icon} alt="" aria-hidden="true" className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <span className="text-white text-[13px] sm:text-[15px] font-medium leading-6 whitespace-pre-line">
+                <span className="text-white text-[11px] sm:text-[15px] font-medium leading-[1.4] whitespace-pre-line max-w-[110px]">
                   {label}
                 </span>
               </div>
@@ -122,19 +126,19 @@ export default function HeroSection() {
           </div>
 
           {/* Desktop horizontal row */}
-          <div className="hidden xl:flex justify-center items-center flex-nowrap">
+          <div className="hidden xl:flex justify-center items-center flex-nowrap max-w-[760px] mx-auto">
             {HERO_FEATURES.map(({ icon, alt, label }, index) => (
               <div key={alt} className="contents">
-                <div className="flex flex-row items-center gap-3 px-3 2xl:px-4 grow justify-center text-left">
-                  <div className="w-8 h-8 rounded-full bg-[#1b2d6e] flex items-center justify-center shrink-0">
-                    <img src={icon} alt="" aria-hidden="true" className="w-4 h-4 object-contain" />
+                <div className="flex min-w-0 grow items-center justify-center gap-4 px-5 text-left">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#2B438F]">
+                    <img src={icon} alt="" aria-hidden="true" className="h-[18px] w-[18px] object-contain" />
                   </div>
-                  <span className="leading-tight text-white font-semibold text-[13px] 2xl:text-[15px] whitespace-pre-line">
+                  <span className="whitespace-pre-line text-[14px] font-semibold leading-[1.15] tracking-[-0.02em] text-white">
                     {label}
                   </span>
                 </div>
                 {index < HERO_FEATURES.length - 1 && (
-                  <div className="w-px h-10 bg-gradient-to-b from-transparent via-white/15 to-transparent shrink-0" />
+                  <div className="h-11 w-px shrink-0 bg-gradient-to-b from-transparent via-white/14 to-transparent" />
                 )}
               </div>
             ))}
@@ -147,6 +151,11 @@ export default function HeroSection() {
       <div
         className="w-full absolute bottom-0 inset-x-0 h-8 bg-white pointer-events-none z-20 hidden xl:block 2xl:hidden"
         style={{ clipPath: "polygon(0% 0%, 20% 0%, 22% 100%, 78% 100%, 80% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
+        aria-hidden="true"
+      />
+      <div
+        className="w-full absolute bottom-0 inset-x-0 h-8 bg-white pointer-events-none z-20 xl:hidden"
+        style={{ clipPath: "polygon(0% 0%, 6% 0%, 16% 100%, 84% 100%, 94% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
         aria-hidden="true"
       />
       <div

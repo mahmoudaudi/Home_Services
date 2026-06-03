@@ -22,7 +22,7 @@ export default function BlogSection() {
           {BLOG_POSTS.map((post) => (
             <article key={post.title} className="flex flex-col group cursor-pointer text-left">
 
-              <div className="w-full aspect-[16/10] rounded-2xl sm:rounded-[24px] overflow-hidden mb-3 bg-zinc-900 border border-zinc-800/40">
+              <div className="w-full aspect-[16/10] rounded-2xl sm:rounded-[24px] overflow-hidden mb-3 bg-zinc-900">
                 <img
                   src={post.image}
                   alt={post.title}

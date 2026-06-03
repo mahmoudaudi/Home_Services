@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <>
       <header className="fixed top-0 left-0 w-full bg-[#142257] z-50">
-        <div className="max-w-[1440px] mx-auto flex items-center justify-between px-5 sm:px-8 lg:px-16 xl:px-24 py-4 md:py-5">
+        <div className="max-w-[1440px] mx-auto flex items-center justify-between px-5 sm:px-8 lg:px-16 xl:px-24 py-5 md:py-5">
 
           <img src={logo} alt="HomePro" className="h-8 md:h-9 object-contain" />
 
@@ -31,9 +31,9 @@ export default function Navbar() {
             className="lg:hidden flex flex-col justify-center gap-[5px] w-11 h-11 -mr-2"
             aria-label="Open navigation menu"
           >
-            <span className="w-6 h-[2px] bg-white mx-auto block" />
-            <span className="w-6 h-[2px] bg-white mx-auto block" />
-            <span className="w-6 h-[2px] bg-white mx-auto block" />
+            <span className="w-6 h-[2px] bg-white mx-auto block rounded-full" />
+            <span className="w-6 h-[2px] bg-white mx-auto block rounded-full" />
+            <span className="w-6 h-[2px] bg-white mx-auto block rounded-full" />
           </button>
         </div>
       </header>
