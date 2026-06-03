@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+/* ─── SVG Clip-path utilities ──────────────────────────────────────────────
+   Tailwind arbitrary-value syntax cannot reference SVG fragment IDs reliably,
+   so these are defined here as named utilities.                              */
+
+.clip-chamfer {
+  clip-path: url(#chamferMask);
+}
+
+/* Remove the chamfer on small screens — SVG clip-paths are not mobile-friendly
+   at narrow widths; swap to a plain rounded card instead.                    */
+@media (max-width: 1023px) {
+  .clip-chamfer {
+    clip-path: none;
+  }
+}
+
+/* ─── CtaBanner top geometric bar ──────────────────────────────────────────
+   The white notch shape at the top of the banner requires a ::before
+   pseudo-element, which Tailwind cannot generate.                           */
+
+.cta-banner-notch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 54px;
+  background-color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 100% 16px, 42% 16px, 39% 54px, 13% 54px, 10% 16px, 0 16px);
+  z-index: 40;
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .cta-banner-notch::before {
+    height: 48px;
+    clip-path: polygon(0 0, 100% 0, 100% 12px, 78% 12px, 73% 48px, 27% 48px, 22% 12px, 0 12px);
+  }
+}

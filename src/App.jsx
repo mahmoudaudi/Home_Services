@@ -1,27 +1,71 @@
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Navbar from "./components/Navbar";
-import OurServices from "./components/OurServices";
-import Featured from "./components/Featured";
-import HowWorks from "./components/HowWorks";
-import Review from "./components/Review";
-import Blog from "./components/Blog";
-import FAQ from "./components/FAQ";
-import Banner from "./components/Banner";
-import Footer from "./components/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import HeroSection from "@/components/sections/HeroSection";
+import ProfessionalServices from "@/components/sections/ProfessionalServices";
+import ServicesGrid from "@/components/sections/ServicesGrid";
+import BenefitsSection from "@/components/sections/BenefitsSection";
+import HowItWorks from "@/components/sections/HowItWorks";
+import Testimonials from "@/components/sections/Testimonials";
+import BlogSection from "@/components/sections/BlogSection";
+import FaqSection from "@/components/sections/FaqSection";
+import CtaBanner from "@/components/sections/CtaBanner";
+
+/**
+ * Global SVG clip-path definitions.
+ * Kept here — outside every clipped element — so browsers always find
+ * the IDs when resolving `clip-path: url(#id)` in CSS or inline styles.
+ * A zero-size SVG inside the element it clips is unreliable across browsers.
+ */
+function SvgDefs() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ position: "absolute", width: 0, height: 0, overflow: "hidden" }}
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        {/* House-shaped polygon — used by ProfessionalServices */}
+        <clipPath id="housePoly" clipPathUnits="objectBoundingBox">
+          <path d="M 0.50,0.00 L 1.00,0.24 L 1.00,0.94 Q 1.00,1.00 0.94,1.00 L 0.06,1.00 Q 0.00,1.00 0.00,0.94 L 0.00,0.24 Z" />
+        </clipPath>
+
+        {/* Side-chamfer shape — used by BenefitsSection on desktop */}
+        <clipPath id="chamferMask" clipPathUnits="objectBoundingBox">
+          <path d="M 0,0
+                   L 1,0
+                   L 1,0.14
+                   L 0.982,0.18
+                   L 0.982,0.82
+                   L 1,0.86
+                   L 1,1
+                   L 0,1
+                   L 0,0.86
+                   L 0.018,0.82
+                   L 0.018,0.18
+                   L 0,0.14 Z" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
 export default function App() {
   return (
     <>
+      <SvgDefs />
       <Navbar />
-      <Hero />
-      <Services />
-      <OurServices />
-      <Featured />
-      <HowWorks />
-      <Review />
-      <Blog />
-      <FAQ />
-      <Banner />
+      <main>
+        <HeroSection />
+        <ProfessionalServices />
+        <ServicesGrid />
+        <BenefitsSection />
+        <HowItWorks />
+        <Testimonials />
+        <BlogSection />
+        <FaqSection />
+        <CtaBanner />
+      </main>
       <Footer />
     </>
   );
