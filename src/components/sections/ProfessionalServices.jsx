@@ -1,6 +1,6 @@
-import roofingWorkersImg from "@/assets/about-workers.png";
-import CheckItem from "@/components/common/CheckItem";
-import { PROFESSIONAL_FEATURES } from "@/data/professionalFeatures";
+import roofingWorkersImg from "@/assets/images/about-workers.png";
+import CheckItem from "@/components/ui/CheckItem";
+import { PROFESSIONAL_FEATURES } from "@/constants/professionalFeatures";
 import { CONTACT_PHONE_DISPLAY, CONTACT_PHONE_HREF } from "@/config/theme";
 
 export default function ProfessionalServices() {

@@ -1,11 +1,11 @@
 import phoneIcon from "@/assets/icons/phone.svg";
 import checkIcon from "@/assets/icons/check.svg";
-import leftWorkerImage from "@/assets/Image 1.png";
-import rightWorkerImage from "@/assets/Image 2.png";
-import guaranteeIcon from "@/assets/icons/Guarantee.png";
-import clockIcon from "@/assets/icons/Clock.png";
-import mapIcon from "@/assets/icons/Map.png";
-import calendarIcon from "@/assets/icons/Calendar.png";
+import leftWorkerImage from "@/assets/images/image-1.png";
+import rightWorkerImage from "@/assets/images/image-2.png";
+import guaranteeIcon from "@/assets/icons/guarantee.png";
+import clockIcon from "@/assets/icons/clock.png";
+import mapIcon from "@/assets/icons/map.png";
+import calendarIcon from "@/assets/icons/calendar.png";
 import { CONTACT_PHONE_HREF } from "@/config/theme";
 
 const HERO_FEATURES = [

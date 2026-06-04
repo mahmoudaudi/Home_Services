@@ -1,6 +1,6 @@
-import thumbnail1 from "@/assets/Thumbnail.png";
-import thumbnail2 from "@/assets/Thumbnail1.png";
-import thumbnail3 from "@/assets/Thumbnail2.png";
+import thumbnail1 from "@/assets/images/thumbnail.png";
+import thumbnail2 from "@/assets/images/thumbnail-1.png";
+import thumbnail3 from "@/assets/images/thumbnail-2.png";
 
 export const BLOG_POSTS = [
   {

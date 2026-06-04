@@ -1,7 +1,7 @@
-import bgImage from "@/assets/Bg@2x.png";
-import workerImage from "@/assets/Worker.png";
-import blueCheckIcon from "@/assets/icons/Icon@2x.png";
-import { HOW_IT_WORKS_STEPS } from "@/data/howItWorksSteps";
+import bgImage from "@/assets/images/bg-2x.png";
+import workerImage from "@/assets/images/worker.png";
+import blueCheckIcon from "@/assets/icons/icon-2x.png";
+import { HOW_IT_WORKS_STEPS } from "@/constants/howItWorksSteps";
 
 export default function HowItWorks() {
   return (

@@ -1,4 +1,4 @@
-import { BENEFITS } from "@/data/benefits";
+import { BENEFITS } from "@/constants/benefits";
 
 export default function BenefitsSection() {
   return (

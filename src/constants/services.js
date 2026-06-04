@@ -1,10 +1,10 @@
-import plumbingIcon from "@/assets/icons/Plumbing-Filled.png";
-import roofingIcon from "@/assets/icons/Roof_Filled.png";
-import moldIcon from "@/assets/icons/Wall-Filled.png";
-import treeIcon from "@/assets/icons/Wood-Tree-Filled.png";
-import applianceIcon from "@/assets/icons/Repair_Filled.png";
-import bathroomIcon from "@/assets/icons/Bathroom-Filled.png";
-import locksmithIcon from "@/assets/icons/Door-Filled.png";
+import plumbingIcon from "@/assets/icons/plumbing-filled.png";
+import roofingIcon from "@/assets/icons/roof-filled.png";
+import moldIcon from "@/assets/icons/wall-filled.png";
+import treeIcon from "@/assets/icons/wood-tree-filled.png";
+import applianceIcon from "@/assets/icons/repair-filled.png";
+import bathroomIcon from "@/assets/icons/bathroom-filled.png";
+import locksmithIcon from "@/assets/icons/door-filled.png";
 
 export const SERVICES = [
   {

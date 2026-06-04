@@ -1,5 +1,5 @@
-import contactImg from "@/assets/contact-image.png";
-import bannerImg from "@/assets/banner-image.png";
+import contactImg from "@/assets/images/contact-image.png";
+import bannerImg from "@/assets/images/banner-image.png";
 import { CONTACT_PHONE_HREF } from "@/config/theme";
 
 export default function CtaBanner() {

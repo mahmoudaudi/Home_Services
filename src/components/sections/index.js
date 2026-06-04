@@ -1,0 +1,9 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as ProfessionalServices } from "./ProfessionalServices";
+export { default as ServicesGrid } from "./ServicesGrid";
+export { default as BenefitsSection } from "./BenefitsSection";
+export { default as HowItWorks } from "./HowItWorks";
+export { default as Testimonials } from "./Testimonials";
+export { default as BlogSection } from "./BlogSection";
+export { default as FaqSection } from "./FaqSection";
+export { default as CtaBanner } from "./CtaBanner";

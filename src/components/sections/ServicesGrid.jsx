@@ -1,4 +1,4 @@
-import { SERVICES } from "@/data/services";
+import { SERVICES } from "@/constants/services";
 import { CONTACT_PHONE_HREF } from "@/config/theme";
 
 export default function ServicesGrid() {

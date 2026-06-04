@@ -1,14 +1,15 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import HeroSection from "@/components/sections/HeroSection";
-import ProfessionalServices from "@/components/sections/ProfessionalServices";
-import ServicesGrid from "@/components/sections/ServicesGrid";
-import BenefitsSection from "@/components/sections/BenefitsSection";
-import HowItWorks from "@/components/sections/HowItWorks";
-import Testimonials from "@/components/sections/Testimonials";
-import BlogSection from "@/components/sections/BlogSection";
-import FaqSection from "@/components/sections/FaqSection";
-import CtaBanner from "@/components/sections/CtaBanner";
+import { Navbar, Footer } from "@/components/layout";
+import {
+  HeroSection,
+  ProfessionalServices,
+  ServicesGrid,
+  BenefitsSection,
+  HowItWorks,
+  Testimonials,
+  BlogSection,
+  FaqSection,
+  CtaBanner,
+} from "@/components/sections";
 
 /**
  * Global SVG clip-path definitions.

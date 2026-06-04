@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FAQ_ITEMS } from "@/data/faqItems";
+import { FAQ_ITEMS } from "@/constants/faqItems";
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState(0);

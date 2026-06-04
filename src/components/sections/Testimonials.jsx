@@ -1,8 +1,8 @@
 import { useState } from "react";
-import trustpilotLogo from "@/assets/Logo.png";
-import profile1 from "@/assets/imageProfile.png";
-import profile2 from "@/assets/profile2(copy).jpeg";
-import { TESTIMONIALS } from "@/data/testimonials";
+import trustpilotLogo from "@/assets/images/logo.png";
+import profile1 from "@/assets/images/image-profile.png";
+import profile2 from "@/assets/images/profile-2.jpeg";
+import { TESTIMONIALS } from "@/constants/testimonials";
 
 const AVATARS = [profile2, profile1, profile1, profile1];
 

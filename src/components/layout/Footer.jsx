@@ -1,4 +1,4 @@
-import logo from "@/assets/Example Logo1.png";
+import logo from "@/assets/images/example-logo-1.png";
 import { CONTACT_PHONE_HREF, COPYRIGHT_YEAR } from "@/config/theme";
 
 export default function Footer() {

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import logoIcon from "@/assets/icons/Group 33.svg";
-import { NAV_LINKS } from "@/data/navigation";
+import logoIcon from "@/assets/icons/group-33.svg";
+import { NAV_LINKS } from "@/constants/navigation";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

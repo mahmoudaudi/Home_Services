@@ -1,9 +1,9 @@
-import guaranteeIcon from "@/assets/icons/Guarantee-Filled.png";
-import quotesIcon from "@/assets/icons/Quotes-Filled.png";
-import localIcon from "@/assets/icons/Local-Filled.png";
-import fast24hIcon from "@/assets/icons/24H-Filled.png";
-import calendarIcon from "@/assets/icons/Calendar-Filled.png";
-import commitmentIcon from "@/assets/icons/Commitment-Filled.png";
+import guaranteeIcon from "@/assets/icons/guarantee-filled.png";
+import quotesIcon from "@/assets/icons/quotes-filled.png";
+import localIcon from "@/assets/icons/local-filled.png";
+import fast24hIcon from "@/assets/icons/24h-filled.png";
+import calendarIcon from "@/assets/icons/calendar-filled.png";
+import commitmentIcon from "@/assets/icons/commitment-filled.png";
 
 export const BENEFITS = [
   {

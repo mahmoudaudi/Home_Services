@@ -1,4 +1,4 @@
-import { BLOG_POSTS } from "@/data/blogPosts";
+import { BLOG_POSTS } from "@/constants/blogPosts";
 
 const TAG_PILL =
   "px-3 py-1.5 rounded-full bg-[#F1F5F9] text-[#0F172A] font-medium text-[11px] sm:text-[12px] leading-none border border-slate-100/50 shadow-sm";
